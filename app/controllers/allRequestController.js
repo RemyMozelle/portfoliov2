@@ -17,5 +17,4 @@ const allRequest = {
     })
   }
 }
-
 module.exports = allRequest;

@@ -6,7 +6,7 @@ const database = {
       database: 'portfolio',
       host: 'localhost',
       user: 'root',
-      password: ''
+      password: 'root'
     })
   }
 }

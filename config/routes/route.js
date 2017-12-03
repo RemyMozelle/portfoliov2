@@ -1,7 +1,7 @@
 const express = require('express');
 const route = express.Router();
-const allRequestController = require('../../app/controllers/allRequestController');
+const requests = require('../../app/controllers/allRequestController');
 
-route.get('/', allRequestController.getAllRequest)
+route.get('/menu', requests.getAllRequest);
 
 module.exports = route;

@@ -8,13 +8,13 @@
       -blanc: #abb2bf;
       -jaune: #fd9020;
 */
-body { font-family: consolas }
+body { font-family: 'Open Sans', sans-serif; }
 /** background color **/
 header, .savoir_faire, footer{ background-color: #282c34; padding-bottom: 20px; padding-top: 20px}
 
 /** COLOR **/
 .vert{color:#a6e22e; }.rose{color:#f92672;}.bleu{color:#48cdef;}.blanc{color:#abb2bf;}.orange{color:#fd9020;}.fond{color:#282c34}
-.bvert{background-color: #a6e22e; }
+.bvert{background-color: #a6e22e; }.brose{background-color: #f92672; }.bbleu{background-color: #48cdef; }
 /** MENU **/
 .navbar-default{ background-color: transparent; border: none; }
 body header .navbar-default .navbar-nav > li > a:hover { color: #f92672; }
@@ -38,12 +38,17 @@ header ol li { font-size: 1.4em}
   float: left;
 }
 /** PORT FOLIO **/
+/** CARDS **/
+.fix-relative-img { position: relative }
+.fix-absolute-img { 
+  position: absolute; 
+  display: flex; 
+  bottom: -15px; 
+  right: 10px; }
+.resize-git-view { width: 40px; height:40px }
 
 /** SAVOIR FAIRE **/
-.thumbnail {
-  background-color: transparent;
-  border: none;
-}
+.thumbnail { background-color: transparent; }
 
 /** FOOTER **/
 .glyphicon-save:before {
