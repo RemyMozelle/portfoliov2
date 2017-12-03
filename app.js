@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const connection = mysql.createConnection(process.env.JAWSDB_URL);
 
 app.set('view engine', 'pug');
 app.set('views', 'app/views/pages');
