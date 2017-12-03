@@ -1,13 +1,9 @@
 const mysql = require('mysql');
+const dotenv = require('dotenv').config({path: '.env'})
 
 const database = {
   getConnection(){
-    return mysql.createConnection({
-      database: process.env.database,
-      host: process.env.host,
-      user: process.env.user,
-      password: process.env.password
-    })
+    return mysql.createConnection(process.env.JAWSDB_URL);
   }
 }
 
