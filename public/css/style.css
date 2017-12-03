@@ -1,0 +1,52 @@
+/*
+ * HEADER
+ *  COLOR :
+  *   -fond : #282c34;
+      -vert : #a6e22e;
+      -rose : #f92672;
+      -bleu : #48cdef;
+      -blanc: #abb2bf;
+      -jaune: #fd9020;
+*/
+body { font-family: consolas }
+/** background color **/
+header, .savoir_faire, footer{ background-color: #282c34; padding-bottom: 20px; padding-top: 20px}
+
+/** COLOR **/
+.vert{color:#a6e22e; }.rose{color:#f92672;}.bleu{color:#48cdef;}.blanc{color:#abb2bf;}.orange{color:#fd9020;}.fond{color:#282c34}
+.bvert{background-color: #a6e22e; }
+/** MENU **/
+.navbar-default{ background-color: transparent; border: none; }
+body header .navbar-default .navbar-nav > li > a:hover { color: #f92672; }
+header .navbar-default .navbar-nav > li > a, ol li { color: #abb2bf; }
+header ol li { font-size: 1.4em}
+
+/** MENU RS **/
+.rs { 
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-left: 18px;
+ }
+.rs figure a img { width: 40px; margin-right: 12px}
+
+/** ALL ICONS **/
+.fix-icon {
+  width: 60px;
+  margin-right: 20px;
+  margin-top: 5px;
+  float: left;
+}
+/** PORT FOLIO **/
+
+/** SAVOIR FAIRE **/
+.thumbnail {
+  background-color: transparent;
+  border: none;
+}
+
+/** FOOTER **/
+.glyphicon-save:before {
+  padding-right: 10px;
+  color: black;
+}

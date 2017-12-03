@@ -1,0 +1,21 @@
+extends ../layouts/layout
+
+block head
+  title RémyMozelle
+block header
+  div#acceuil
+  header
+    include ../includes/header/inc_header.pug
+block content
+  div#portfolio
+  div.container-fluid.portfolio
+    div.container
+      include ../includes/portfolio/inc_portfolio.pug
+  div#savoir_faire
+  div.container-fluid.savoir_faire
+    div.container
+      include ../includes/savoir_faire/inc_savoir_faire.pug
+  div#contact
+  div.container-fluid.contact
+    div.container
+      include ../includes/contact/inc_contact.pug

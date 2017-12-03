@@ -1,0 +1,15 @@
+section.row
+  each card in getCards
+    article(class="col-sm-6 col-md-4")
+      div.thumbnail
+        div.block_img_link
+          img(src=`${card.img}` style="width:100%;height:232px;")
+          div.view
+            a: img(class="hover-eyes-th" href="#" src="img/contact/eye.png")
+            a: img(class="hover-eyes-th" href="#" src="img/contact/git.png")
+          div.caption
+            h3 The Montaigne
+            p intégration
+            p(style="font-size:1.4em;")
+              span(class="label label-default bbleu") HTML5
+              span(class="label label-default brose") CSS3

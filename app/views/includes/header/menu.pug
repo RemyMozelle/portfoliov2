@@ -1,0 +1,13 @@
+nav(class="navbar navbar-default" role="navigation")
+  div.container
+    div.navbar-header
+      img(class="nav-brand" src="img/minimoi.png", alt="image de remy")
+      button(type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+    div(class="collapse navbar-collapse navbar-ex1-collapse")
+      ul(class="nav navbar-nav navbar-right")
+        each listmenu in getMenus
+          li: a(href=`${listmenu.url}`)=`${listmenu.name}`

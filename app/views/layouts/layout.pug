@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="css/bootstrap.min.css")
+    link(rel="stylesheet", href="css/style.css")
+    block head
+  body
+    block header
+    block content
+    footer
+      div.container
+        div.row
+          div.a-propos.col-md-6
+            h4.vert < À_propos >
+            p.blanc
+              | Je suis <span class="vert">Rémy Mozelle</span>, apprenti développeur web à la Réunion. Je suis actuellement
+              | en formation intensive à <span class="orange">Simplon</span><br>
+              | Passioné par les nouvelles technologie.
+              | Je souhaite faire du web mon métier</p>
+          div.me-suivre.col-md-3
+            h4.vert <span><<spans>Me_suivre</span>></spans>    
+            div.rs
+              figure: a: img(src="img/contact/rs-git.png" alt="")   
+              figure: a: img(src="img/contact/rs-twitter.png" alt="")   
+              figure: a: img(src="img/contact/rs-lin.png" alt="")   
+          div.cv.col-md-3
+            h4.vert <span><<spans>Mon_cv</span>></spans>
+            a(target="_blank" href="cv/Mozellerémycv.pdf" class="btn bvert") <span class="glyphicon glyphicon-save" style="padding-right:5px;color:black;">Télécharger</span>
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    script(src="js/bootstrap.min.js")
+    script(src="js/progressBar.js")
